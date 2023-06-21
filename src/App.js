@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import GrandParent from './component/GrandParent';
 
 function App() {
+
+  let quote = {
+    Gandalf: 'Look to my coming on the first light of the fifth light of the fifth day, at dawn look to east'
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GrandParent quote={ quote } />
     </div>
   );
 }
